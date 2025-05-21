@@ -1,4 +1,5 @@
-﻿using Locadora.Models;
+﻿using Locadora.Dto.Autor;
+using Locadora.Models;
 
 namespace Locadora.Services.Autor
 {
@@ -7,5 +8,7 @@ namespace Locadora.Services.Autor
         Task<ResponseModel<List<AutorModel>>> ListarAutores();
         Task<ResponseModel<AutorModel>> BuscarAutorPorId(int idAutor);
         Task<ResponseModel<AutorModel>> BuscarAutorPorIdLivro(int idLivro);
+
+        Task<ResponseModel<List<AutorModel>>> CriarAutor(AutorCriacaoDto autorCriacaoDto);
     }
 }
