@@ -14,9 +14,33 @@ namespace Locadora.Services.Autor
             _context = context;
         }
 
-        public Task<ResponseModel<AutorModel>> BuscarAutorPorId(int idAutor)
+        public async Task<ResponseModel<AutorModel>> BuscarAutorPorId(int idAutor)
         {
-            throw new NotImplementedException();
+            ResponseModel<AutorModel> resposta = new ResponseModel<AutorModel>();
+
+            try
+            {
+                var autor = await _context.Autores.FirstOrDefaultAsync(autorBanco => autorBanco.Id == idAutor);
+
+                if (autor == null)
+                {
+                    resposta.Mensagem = "Registro não localizado !";
+                    resposta.Status = false;
+                    return resposta;
+                }
+                else 
+                {
+                    resposta.Dados = autor;
+                    resposta.Mensagem = "Autor localizado !";
+                    return resposta;
+                }
+            }
+            catch (Exception ex)
+            {
+                resposta.Mensagem = ex.Message;
+                resposta.Status = false;
+                return resposta;
+            }
         }
 
         public Task<ResponseModel<AutorModel>> BuscarAutorPorIdLivro(int idLivro)
@@ -38,7 +62,6 @@ namespace Locadora.Services.Autor
             }
             catch (Exception ex)
             {
-
                 resposta.Mensagem = ex.Message;
                 resposta.Status = false;
                 return resposta;
