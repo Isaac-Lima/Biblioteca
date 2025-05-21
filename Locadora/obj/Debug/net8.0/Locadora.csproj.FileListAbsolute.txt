@@ -140,3 +140,4 @@ C:\dev\Locadora\Locadora\obj\Debug\net8.0\refint\Locadora.dll
 C:\dev\Locadora\Locadora\obj\Debug\net8.0\Locadora.pdb
 C:\dev\Locadora\Locadora\obj\Debug\net8.0\Locadora.genruntimeconfig.cache
 C:\dev\Locadora\Locadora\obj\Debug\net8.0\ref\Locadora.dll
+C:\dev\Locadora\Locadora\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
