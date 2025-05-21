@@ -9,6 +9,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{CFFB54BE-0639-4D3D-8AD5-A5E8C5A7B103}|Locadora\\Locadora.csproj|c:\\dev\\locadora\\locadora\\controllers\\autorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CFFB54BE-0639-4D3D-8AD5-A5E8C5A7B103}|Locadora\\Locadora.csproj|solutionrelative:locadora\\controllers\\autorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFFB54BE-0639-4D3D-8AD5-A5E8C5A7B103}|Locadora\\Locadora.csproj|c:\\dev\\locadora\\locadora\\models\\livromodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFFB54BE-0639-4D3D-8AD5-A5E8C5A7B103}|Locadora\\Locadora.csproj|solutionrelative:locadora\\models\\livromodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,13 +34,26 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LivroModel.cs",
+              "DocumentMoniker": "C:\\dev\\Locadora\\Locadora\\Models\\LivroModel.cs",
+              "RelativeDocumentMoniker": "Locadora\\Models\\LivroModel.cs",
+              "ToolTip": "C:\\dev\\Locadora\\Locadora\\Models\\LivroModel.cs",
+              "RelativeToolTip": "Locadora\\Models\\LivroModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T14:14:10.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "AutorController.cs",
               "DocumentMoniker": "C:\\dev\\Locadora\\Locadora\\Controllers\\AutorController.cs",
               "RelativeDocumentMoniker": "Locadora\\Controllers\\AutorController.cs",
               "ToolTip": "C:\\dev\\Locadora\\Locadora\\Controllers\\AutorController.cs",
               "RelativeToolTip": "Locadora\\Controllers\\AutorController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAUwCQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-21T13:46:47.823Z",
               "EditorCaption": ""
@@ -49,7 +66,7 @@
               "RelativeDocumentMoniker": "Locadora\\Services\\Autor\\AutorService.cs",
               "ToolTip": "C:\\dev\\Locadora\\Locadora\\Services\\Autor\\AutorService.cs",
               "RelativeToolTip": "Locadora\\Services\\Autor\\AutorService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwBsAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAA+wDgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-21T13:31:02.842Z",
               "EditorCaption": ""
