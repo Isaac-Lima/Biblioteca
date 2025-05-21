@@ -26,7 +26,6 @@ namespace Locadora.Services.Autor
                 if (autor == null)
                 {
                     resposta.Mensagem = "Registro não localizado !";
-                    resposta.Status = false;
                     return resposta;
                 }
                 else 
@@ -58,7 +57,6 @@ namespace Locadora.Services.Autor
                 if (livro == null)
                 {
                     resposta.Mensagem = "Registro não localizado !";
-                    resposta.Status = false;
                     return resposta;
                 }
                 else
@@ -93,6 +91,70 @@ namespace Locadora.Services.Autor
 
                 resposta.Dados = await _context.Autores.ToListAsync();
                 resposta.Mensagem = "Auto criado com sucesso !";
+
+                return resposta;
+            }
+            catch (Exception ex)
+            {
+                resposta.Mensagem = ex.Message;
+                resposta.Status = false;
+                return resposta;
+            }
+        }
+
+        public async Task<ResponseModel<List<AutorModel>>> EditarAutor(AutorEdicaoDto autorEdicaoDto)
+        {
+            ResponseModel<List<AutorModel>> resposta = new ResponseModel<List<AutorModel>>();
+
+            try
+            {
+                var autor = await _context.Autores.FirstOrDefaultAsync(autorBanco => autorBanco.Id == autorEdicaoDto.Id);
+
+                if (autor == null)
+                {
+                    resposta.Mensagem = "Nenhum autor localizado !";
+                    return resposta;
+                }
+
+                autor.Nome = autorEdicaoDto.Nome;
+                autor.Sobrenome = autorEdicaoDto.Sobrenome;
+
+                _context.Update(autor);
+                await _context.SaveChangesAsync();
+
+                resposta.Dados = await _context.Autores.ToListAsync();
+                resposta.Mensagem = "Autor editado com sucesso !";
+
+                return resposta;
+            }
+            catch (Exception ex)
+            {
+                resposta.Mensagem = ex.Message;
+                resposta.Status = false;
+                return resposta;
+            }
+        }
+
+        public async Task<ResponseModel<List<AutorModel>>> ExcluirAutor(int idAutor)
+        {
+            ResponseModel<List<AutorModel>> resposta = new ResponseModel<List<AutorModel>>();
+
+            try
+            
+            {
+                var autor = await _context.Autores.FirstOrDefaultAsync(autorBanco => autorBanco.Id == idAutor);
+
+                if (autor == null)
+                {
+                    resposta.Mensagem = "Nenhum autor localizado !";
+                    return resposta;
+                }
+
+                _context.Remove(autor);
+                await _context.SaveChangesAsync();
+
+                resposta.Dados = await _context.Autores.ToListAsync();
+                resposta.Mensagem = "Autor removido com sucesso !";
 
                 return resposta;
             }

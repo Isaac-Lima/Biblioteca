@@ -15,8 +15,8 @@
       "RelativeMoniker": "D:0:0:{CFFB54BE-0639-4D3D-8AD5-A5E8C5A7B103}|Locadora\\Locadora.csproj|solutionrelative:locadora\\services\\autor\\iautorinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CFFB54BE-0639-4D3D-8AD5-A5E8C5A7B103}|Locadora\\Locadora.csproj|c:\\dev\\locadora\\locadora\\dto\\autor\\autorcriacaodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFFB54BE-0639-4D3D-8AD5-A5E8C5A7B103}|Locadora\\Locadora.csproj|solutionrelative:locadora\\dto\\autor\\autorcriacaodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CFFB54BE-0639-4D3D-8AD5-A5E8C5A7B103}|Locadora\\Locadora.csproj|c:\\dev\\locadora\\locadora\\dto\\autor\\autoredicaodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFFB54BE-0639-4D3D-8AD5-A5E8C5A7B103}|Locadora\\Locadora.csproj|solutionrelative:locadora\\dto\\autor\\autoredicaodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,14 +39,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AutorCriacaoDto.cs",
-              "DocumentMoniker": "C:\\dev\\Locadora\\Locadora\\Dto\\Autor\\AutorCriacaoDto.cs",
-              "RelativeDocumentMoniker": "Locadora\\Dto\\Autor\\AutorCriacaoDto.cs",
-              "ToolTip": "C:\\dev\\Locadora\\Locadora\\Dto\\Autor\\AutorCriacaoDto.cs",
-              "RelativeToolTip": "Locadora\\Dto\\Autor\\AutorCriacaoDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Title": "AutorEdicaoDto.cs",
+              "DocumentMoniker": "C:\\dev\\Locadora\\Locadora\\Dto\\Autor\\AutorEdicaoDto.cs",
+              "RelativeDocumentMoniker": "Locadora\\Dto\\Autor\\AutorEdicaoDto.cs",
+              "ToolTip": "C:\\dev\\Locadora\\Locadora\\Dto\\Autor\\AutorEdicaoDto.cs",
+              "RelativeToolTip": "Locadora\\Dto\\Autor\\AutorEdicaoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T16:10:46.738Z",
+              "WhenOpened": "2025-05-21T16:41:29.544Z",
               "EditorCaption": ""
             },
             {
@@ -57,7 +57,7 @@
               "RelativeDocumentMoniker": "Locadora\\Services\\Autor\\IAutorInterface.cs",
               "ToolTip": "C:\\dev\\Locadora\\Locadora\\Services\\Autor\\IAutorInterface.cs",
               "RelativeToolTip": "Locadora\\Services\\Autor\\IAutorInterface.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-21T16:06:50.77Z",
               "EditorCaption": ""
@@ -70,7 +70,7 @@
               "RelativeDocumentMoniker": "Locadora\\Controllers\\AutorController.cs",
               "ToolTip": "C:\\dev\\Locadora\\Locadora\\Controllers\\AutorController.cs",
               "RelativeToolTip": "Locadora\\Controllers\\AutorController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAUwDsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-21T13:46:47.823Z",
               "EditorCaption": ""
@@ -83,7 +83,7 @@
               "RelativeDocumentMoniker": "Locadora\\Services\\Autor\\AutorService.cs",
               "ToolTip": "C:\\dev\\Locadora\\Locadora\\Services\\Autor\\AutorService.cs",
               "RelativeToolTip": "Locadora\\Services\\Autor\\AutorService.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAkwFoAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA2wJkAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-21T13:31:02.842Z",
               "EditorCaption": ""
