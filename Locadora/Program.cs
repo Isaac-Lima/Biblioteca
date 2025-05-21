@@ -1,4 +1,5 @@
 using Locadora.Data;
+using Locadora.Services.Autor;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 
@@ -12,7 +13,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(Options =>
     Options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")
-)); 
+));
+builder.Services.AddScoped<IAutorInterface, AutorService>();
 
 var app = builder.Build();
 

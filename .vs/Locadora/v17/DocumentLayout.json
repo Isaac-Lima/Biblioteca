@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\dev\\Locadora\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{CFFB54BE-0639-4D3D-8AD5-A5E8C5A7B103}|Locadora\\Locadora.csproj|c:\\dev\\locadora\\locadora\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFFB54BE-0639-4D3D-8AD5-A5E8C5A7B103}|Locadora\\Locadora.csproj|solutionrelative:locadora\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -23,19 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\dev\\Locadora\\Locadora\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Locadora\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\dev\\Locadora\\Locadora\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Locadora\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T12:53:33.904Z",
-              "EditorCaption": ""
             }
           ]
         }
