@@ -1,7 +1,6 @@
 ﻿using Locadora.Dto.Autor;
 using Locadora.Models;
 using Locadora.Services.Autor;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Locadora.Controllers

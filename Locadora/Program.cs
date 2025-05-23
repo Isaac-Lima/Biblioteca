@@ -1,5 +1,6 @@
 using Locadora.Data;
 using Locadora.Services.Autor;
+using Locadora.Services.Livro;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 
@@ -15,6 +16,7 @@ builder.Services.AddDbContext<AppDbContext>(Options =>
     Options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")
 ));
 builder.Services.AddScoped<IAutorInterface, AutorService>();
+builder.Services.AddScoped<ILivroInterface, LivroService>();
 
 var app = builder.Build();
 
