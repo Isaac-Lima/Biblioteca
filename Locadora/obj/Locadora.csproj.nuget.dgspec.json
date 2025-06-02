@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\is821\\Source\\Repos\\Locadora\\Locadora\\Locadora.csproj": {}
+    "C:\\Users\\is821\\source\\repos\\Biblioteca\\Locadora\\Locadora.csproj": {}
   },
   "projects": {
-    "C:\\Users\\is821\\Source\\Repos\\Locadora\\Locadora\\Locadora.csproj": {
+    "C:\\Users\\is821\\source\\repos\\Biblioteca\\Locadora\\Locadora.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\is821\\Source\\Repos\\Locadora\\Locadora\\Locadora.csproj",
+        "projectUniqueName": "C:\\Users\\is821\\source\\repos\\Biblioteca\\Locadora\\Locadora.csproj",
         "projectName": "Locadora",
-        "projectPath": "C:\\Users\\is821\\Source\\Repos\\Locadora\\Locadora\\Locadora.csproj",
+        "projectPath": "C:\\Users\\is821\\source\\repos\\Biblioteca\\Locadora\\Locadora.csproj",
         "packagesPath": "C:\\Users\\is821\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\is821\\Source\\Repos\\Locadora\\Locadora\\obj\\",
+        "outputPath": "C:\\Users\\is821\\source\\repos\\Biblioteca\\Locadora\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
