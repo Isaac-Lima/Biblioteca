@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "Locadora.Controllers.AutenticacaoController",
+    "Method": "Login",
+    "RelativePath": "api/Autenticacao/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "Locadora.Dto.User.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Locadora.Controllers.AutorController",
     "Method": "BuscarAutorPorId",
     "RelativePath": "api/Autor/BuscarAutorPorId/{idAutor}",

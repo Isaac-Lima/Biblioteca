@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Locadora")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+356b4848d259455adb068b6ea06a428a6523d282")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85b6bf3e321258b4a921d0d4d6837e9dfb6f26a1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Locadora")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Locadora")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

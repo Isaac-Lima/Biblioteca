@@ -426,3 +426,5 @@ C:\Users\is821\source\repos\Biblioteca\Locadora\obj\Debug\net8.0\refint\Locadora
 C:\Users\is821\source\repos\Biblioteca\Locadora\obj\Debug\net8.0\Locadora.pdb
 C:\Users\is821\source\repos\Biblioteca\Locadora\obj\Debug\net8.0\Locadora.genruntimeconfig.cache
 C:\Users\is821\source\repos\Biblioteca\Locadora\obj\Debug\net8.0\ref\Locadora.dll
+C:\Users\is821\source\repos\Biblioteca\Locadora\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\is821\source\repos\Biblioteca\Locadora\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
