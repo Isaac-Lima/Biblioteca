@@ -11,6 +11,8 @@ Esta é uma Web API desenvolvida em C# com ASP.NET Core e Entity Framework Core.
 
 ## 📦 Funcionalidades
 
+- Autenticação JWT (Jason Web Token)
+- Autorização para acessar endpoints
 - Criar, listar, atualizar e excluir para **Livros**
 - Criar, listar, atualizar e excluir para **Autores**
 - Obter livro por ID
@@ -22,27 +24,67 @@ Esta é uma Web API desenvolvida em C# com ASP.NET Core e Entity Framework Core.
 
 ## 📁 Endpoints
 
+### 🔐 Autenticação
+
+A API utiliza **JWT (JSON Web Token)** para autenticação. Após efetuar login, será gerado um token que deve ser utilizado para autenticar as requisições.
+
+| Método | Endpoint                                  | Descrição                         |
+|--------|-------------------------------------------|-----------------------------------|
+| POST    | `/api/Autenticacao/Login`                       | Efetua o login e retorna o token JWT           |
+
+#### Exemplo de corpo da requisição:
+
+```json
+{
+  "nome": "seuNomeAqui",
+  "senha": "suaSenha123"
+}
+```
+
+#### Exemplo de resposta:
+
+```json
+{
+   eyJhbGciOiJIUzI1NiIsInR5cCI6...
+}
+```
+
+### Como usar o token no Swagger
+
+1. Copie o token retornado no login.
+2. No Swagger, clique no botão **"Authorize"** (ícone de cadeado no topo).
+3. Insira o token no formato abaixo:
+
+```
+Bearer SEU_TOKEN_AQUI
+```
+
+4. Clique em **Authorize** e depois em **Close**.
+5. Agora você poderá fazer requisições autenticadas.
+
+> ⚠️ **Atenção:** Apenas usuários com a role **"Autor"** têm permissão para acessar os endpoints protegidos.
+
 ### 📚 Livros
 
 | Método | Endpoint                                  | Descrição                         |
 |--------|-------------------------------------------|-----------------------------------|
-| GET    | `/api/ListarLivros`                       | Retorna todos os livros           |
-| GET    | `/api/BuscarLivroPorId/{idLivro}`         | Retorna um livro por ID           |
-| GET    | `/api/BuscarLivroPorAutorId/{idAutor}`    | Retorna livros de um autor        |
-| POST   | `/api/CriarLivro`                         | Cria um novo livro                |
-| PUT    | `/api/EditarLivro/{idLivro}`              | Atualiza um livro existente       |
-| DELETE | `/api/ExcluirLivro/{idLivro}`             | Remove um livro                   |
+| GET    | `/api/Livro/ListarLivros`                       | Retorna todos os livros           |
+| GET    | `/api/Livro/BuscarLivroPorId/{idLivro}`         | Retorna um livro por ID           |
+| GET    | `/api/Livro/BuscarLivroPorAutorId/{idAutor}`    | Retorna livros de um autor        |
+| POST   | `/api/Livro/CriarLivro`                         | Cria um novo livro                |
+| PUT    | `/api/Livro/EditarLivro/{idLivro}`              | Atualiza um livro existente       |
+| DELETE | `/api/Livro/ExcluirLivro/{idLivro}`             | Remove um livro                   |
 
 ### ✍️ Autores
 
 | Método | Endpoint                                      | Descrição                            |
 |--------|-----------------------------------------------|----------------------------------------|
-| GET    | `/api/ListarAutores`                          | Retorna todos os autores               |
-| GET    | `/api/BuscarAutorPorId/{idAutor}`             | Retorna um autor por ID                |
-| GET    | `/api/BuscarAutorPorIdLivro/{idLivro}`        | Retorna o autor de um livro            |
-| POST   | `/api/CriarAutor`                             | Cria um novo autor                     |
-| PUT    | `/api/EditarAutor/{idAutor}`                  | Atualiza um autor existente            |
-| DELETE | `/api/ExcluirAutor/{idAutor}`                 | Remove um autor                        |
+| GET    | `/api/Autor/ListarAutores`                          | Retorna todos os autores               |
+| GET    | `/api/Autor/BuscarAutorPorId/{idAutor}`             | Retorna um autor por ID                |
+| GET    | `/api/Autor/BuscarAutorPorIdLivro/{idLivro}`        | Retorna o autor de um livro            |
+| POST   | `/api/Autor/CriarAutor`                             | Cria um novo autor                     |
+| PUT    | `/api/Autor/EditarAutor/{idAutor}`                  | Atualiza um autor existente            |
+| DELETE | `/api/Autor/ExcluirAutor/{idAutor}`                 | Remove um autor                        |
 
 
 ## ▶️ Como Executar a Aplicação
