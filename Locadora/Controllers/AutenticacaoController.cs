@@ -1,7 +1,5 @@
-﻿using Locadora.Dto.User;
+﻿using Locadora.Dto.Autor;
 using Locadora.Services.Token;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Locadora.Controllers
@@ -18,9 +16,9 @@ namespace Locadora.Controllers
         }
 
         [HttpPost("Login")]
-        public async Task<ActionResult<string>> Login(LoginDto loginDto)
+        public async Task<ActionResult<string>> Login(LoginAutorDto loginAutorDto)
         {
-            var token = await tokenInterface.GenerateToken(loginDto);
+            var token = await tokenInterface.GenerateToken(loginAutorDto);
 
             if (string.IsNullOrEmpty(token.Dados))
             {

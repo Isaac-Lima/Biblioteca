@@ -1,9 +1,10 @@
 ﻿using Locadora.Data;
-using Locadora.Dto.User;
+using Locadora.Dto.Autor;
 using Locadora.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Text;
 
@@ -20,13 +21,13 @@ namespace Locadora.Services.Token
             _context = context;
         }
 
-        public async Task<ResponseModel<string>> GenerateToken(LoginDto loginDto)
+        public async Task<ResponseModel<string>> GenerateToken(LoginAutorDto loginAutorDto)
         {
             ResponseModel<string> resposta = new ResponseModel<string>();
 
             try
             {
-                var usuario = await _context.Usuarios.FirstOrDefaultAsync(usuarioDb => usuarioDb.UserName == loginDto.UserName && usuarioDb.Password == loginDto.Password);
+                var usuario = await _context.Autores.FirstOrDefaultAsync(autorDb => autorDb.Nome == loginAutorDto.Nome && autorDb.Senha == autorDb.Senha);
 
                 if (usuario == null)
                 {
@@ -43,10 +44,10 @@ namespace Locadora.Services.Token
 
                 var claims = new List<Claim>
                 {
-                    new Claim(ClaimTypes.Name, usuario.UserName),
+                    new Claim(ClaimTypes.Name, usuario.Nome),
                 };
 
-                claims.AddRange(usuario.Role.Select(role => new Claim(ClaimTypes.Role, role)));
+                claims.AddRange(usuario.Role.Select(role => new Claim(ClaimTypes.Role, usuario.Role)));
 
                 var tokenOptions = new JwtSecurityToken(
                     issuer: emissor,

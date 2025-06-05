@@ -83,7 +83,9 @@ namespace Locadora.Services.Autor
                 var autor = new AutorModel()
                 {
                     Nome = autorCriacaoDto.Nome,
-                    Sobrenome = autorCriacaoDto.Sobrenome
+                    Sobrenome = autorCriacaoDto.Sobrenome,
+                    Senha = autorCriacaoDto.Senha,
+                    Role = autorCriacaoDto.Role
                 };
 
                 _context.Add(autor);

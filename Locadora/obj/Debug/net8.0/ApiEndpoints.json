@@ -8,8 +8,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "loginDto",
-        "Type": "Locadora.Dto.User.LoginDto",
+        "Name": "loginAutorDto",
+        "Type": "Locadora.Dto.Autor.LoginAutorDto",
         "IsRequired": true
       }
     ],

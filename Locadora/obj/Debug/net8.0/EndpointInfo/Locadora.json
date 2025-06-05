@@ -15,17 +15,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/LoginDto"
+                "$ref": "#/components/schemas/LoginAutorDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/LoginDto"
+                "$ref": "#/components/schemas/LoginAutorDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/LoginDto"
+                "$ref": "#/components/schemas/LoginAutorDto"
               }
             }
           }
@@ -555,6 +555,14 @@
           "sobrenome": {
             "type": "string",
             "nullable": true
+          },
+          "senha": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -573,6 +581,10 @@
           "sobrenome": {
             "type": "string",
             "nullable": true
+          },
+          "senha": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -589,6 +601,14 @@
             "nullable": true
           },
           "sobrenome": {
+            "type": "string",
+            "nullable": true
+          },
+          "senha": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
             "type": "string",
             "nullable": true
           }
@@ -732,14 +752,14 @@
         },
         "additionalProperties": false
       },
-      "LoginDto": {
+      "LoginAutorDto": {
         "type": "object",
         "properties": {
-          "userName": {
+          "nome": {
             "type": "string",
             "nullable": true
           },
-          "password": {
+          "senha": {
             "type": "string",
             "nullable": true
           }
