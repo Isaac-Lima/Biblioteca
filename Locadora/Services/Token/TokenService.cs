@@ -27,9 +27,9 @@ namespace Locadora.Services.Token
 
             try
             {
-                var usuario = await _context.Autores.FirstOrDefaultAsync(autorDb => autorDb.Nome == loginAutorDto.Nome && autorDb.Senha == autorDb.Senha);
+                var usuario = await _context.Autores.FirstOrDefaultAsync(autorDb => autorDb.Nome == loginAutorDto.Nome);
 
-                if (usuario == null)
+                if (usuario == null || !BCrypt.Net.BCrypt.Verify(loginAutorDto.Senha, usuario.Senha))
                 {
                     resposta.Mensagem = "Usuário ou senha inválidos !";
                     resposta.Status = false;

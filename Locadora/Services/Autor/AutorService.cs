@@ -84,7 +84,7 @@ namespace Locadora.Services.Autor
                 {
                     Nome = autorCriacaoDto.Nome,
                     Sobrenome = autorCriacaoDto.Sobrenome,
-                    Senha = autorCriacaoDto.Senha,
+                    Senha = BCrypt.Net.BCrypt.HashPassword(autorCriacaoDto.Senha),
                     Role = autorCriacaoDto.Role
                 };
 
@@ -92,7 +92,7 @@ namespace Locadora.Services.Autor
                 await _context.SaveChangesAsync();
 
                 resposta.Dados = await _context.Autores.ToListAsync();
-                resposta.Mensagem = "Auto criado com sucesso !";
+                resposta.Mensagem = "Autor criado com sucesso !";
 
                 return resposta;
             }
