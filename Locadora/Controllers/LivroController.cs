@@ -3,12 +3,14 @@ using Locadora.Dto.Livro;
 using Locadora.Models;
 using Locadora.Services.Autor;
 using Locadora.Services.Livro;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Locadora.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Autor")]
     public class LivroController : ControllerBase
     {
         private readonly ILivroInterface _livroInterface;

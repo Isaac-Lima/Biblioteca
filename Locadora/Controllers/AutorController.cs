@@ -1,12 +1,14 @@
 ﻿using Locadora.Dto.Autor;
 using Locadora.Models;
 using Locadora.Services.Autor;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Locadora.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Autor")]
     public class AutorController : ControllerBase
     {
         private readonly IAutorInterface _autorInterface;
